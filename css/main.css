@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Hind');
+/*-------DEFAULT-----------------*/
 body{
     margin: 0;
     padding: 0;
     background-color: #fffdfd;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 9em 100% 3em;
+    flex-direction: column;
 }
 
+/*------------CABECALHO-------------*/
+
 .headerBar{
-    width: 100%;
+    width: 100vw;
     height: 9em;
     background-color: #011836;
     display: flex;
+    grid-column: 1 /-1;
+    grid-row: 1 / 2;
 }   
     .headerBar__logo{
         width: 70%;
@@ -27,14 +37,100 @@ body{
     display: flex;
     align-items: center;
     justify-content:flex-end;
+    box-sizing: border-box;
+}
+        .headerBar__nav label{
+            font-size: 2em;
+            color: #00e6ea;
+            margin: 0;
+            padding: 5%
+        }
+            #bt_menu{
+               display: none;
+            }
+    .headerBar__nav--cat{
+        display: none;
+    }
+    
+/*----------CORPO--------------*/
+.main{
+    width: 100%;
+    height: auto;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%
+}
+.main__news{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 8% 7% 60% 25%;
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+ 
+    
     
 }
-.headerBar__nav label{
-    font-size: 2em;
-    color: #00e6ea;
-    padding: 2%;
+.main__news--title{
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 1 /2;
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    color: #011836;
+    border-top: solid 2px #011836;
+    
 }
-    #bt_menu{
-       display: none;
-    }
+.main__news--date{
+     grid-column: 1 / -1;
+     grid-row: 2 /3;
+     margin: 0;
+     font-family: 'Hind', sans-serif;
+    color: #00e6ea;
+    font-weight: 800;
+    font-size: 1.4em
+}
+.main__news--img{
+    max-height: 90%;
+    max-width: 90%;
+    grid-column: 1 / -1;
+    grid-row: 3 /4;
+    display: block;
+    margin: auto;
+}
+.main__news--text{
+    grid-column: 1 / -1;
+    grid-row: 4 /5;
+    font-size: 1.1em;
+    margin: 0;
+    font-family: 'Hind', sans-serif;
+    line-height: 1em;
+    text-align: left;
+    padding: 0 5%;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+
+
+
+
+/*-------FOOTER-----------*/
+.footer{
+    width: 100%;
+    background-color: #011836;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: sans-serif;
+    grid-row: 3 / -1;
+}
+.footer p{
+    color: #00e6ea;
+    text-align: center;
+}
     
