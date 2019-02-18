@@ -14,30 +14,33 @@ body{
 
 .headerBar{
     width: 100vw;
-    height: 9em;
-    background-color: #011836;
+    height: 10em;
     display: flex;
+    flex-direction: column;
+    background-color: #011836;
     grid-column: 1 /-1;
     grid-row: 1 / 2;
 }   
-    .headerBar__logo{
-        width: 70%;
-        height: 100%;
+    .headerBar__main{
+        width: 100%;
+        height: 75%;
         display: flex;
-        align-items: center;
-    }   
-        #headerBar__logo--img{
-            max-width: 100%;
-            max-height: 100%;
-        }
+    }
+        .headerBar__logo{
+            width: 70%;
+            height: auto;
+        }   
+            #headerBar__logo--img{
+                max-width: 100%;
+                max-height: 100%;
+            }
 
 .headerBar__nav{
     width: 30%;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content:flex-end;
-    box-sizing: border-box;
 }
         .headerBar__nav label{
             font-size: 2em;
@@ -50,6 +53,20 @@ body{
             }
     .headerBar__nav--cat{
         display: none;
+    }
+
+.headerBar__RedeSociais{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 35, 80);
+}
+    .headerBar__RedeSociais i{
+        margin: 0 3%;
+        font-size: 2em;  
+         color: #00e6ea;
     }
     
 /*----------CORPO--------------*/
@@ -114,10 +131,6 @@ body{
     padding: 0 5%;
     color: rgba(0, 0, 0, 0.54);
 }
-
-
-
-
 
 /*-------FOOTER-----------*/
 .footer{
