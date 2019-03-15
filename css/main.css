@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Hind');
 /*-------DEFAULT-----------------*/
 body{
-    margin: 0;
-    padding: 0;
     background-color: #fffdfd;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 9em 100% 3em;
     flex-direction: column;
+  
 }
+
 
 /*------------CABECALHO-------------*/
 
@@ -35,25 +35,10 @@ body{
                 max-height: 100%;
             }
 
-.headerBar__nav{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-        .headerBar__nav label{
-            font-size: 2em;
-            color: #00e6ea;
-            margin: 0;
-            padding: 5%
-        }
-            #bt_menu{
-               display: none;
-            }
-    .headerBar__nav--cat{
-        display: none;
-    }
+
+
+           
+    
 
 .headerBar__RedeSociais{
     width: 100%;
@@ -63,12 +48,58 @@ body{
     align-items: center;
     background-color: rgb(0, 35, 80);
 }
-    .headerBar__RedeSociais i{
+    .headerBar__RedeSociais a{
         margin: 0 3%;
         font-size: 2em;  
          color: #00e6ea;
     }
+ /*-------BTN MENU-------------*/
+ .btnMenu_open{
+     display: block;
+     height: 50%;
+     background-image: url('../img/btnMenu_azul.svg');
+     background-repeat: no-repeat;
+     color: transparent;
+ }   
+
+ .btnMenu_close{
+    display: block;
+    height: 50%;
+    background-image: url('../img/btnMenu_azulEscuro.svg');
+    background-repeat: no-repeat;
+    color: transparent;
+ }
+
+ .navMenu__item{
+     text-transform: uppercase;
+     font-family: 'Hind', sans-serif;
+     
+ }
+
+
+ #headerBar__navMenu{
+    background: red;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
     
+ 
+ }
+
+ .headerBar__nav{
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /*----------CORPO--------------*/
 .main{
     width: 100%;
