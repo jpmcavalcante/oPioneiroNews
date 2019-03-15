@@ -1,4 +1,4 @@
 # O Pioneiro News
 
-## Site Voltando para nóticia
+## Site Voltado para nóticia
 
