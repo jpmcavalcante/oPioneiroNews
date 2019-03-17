@@ -7,7 +7,8 @@
     width: 100%;
     box-shadow: 1px 1px 20px 5px black;
     display: flex;
-    position: fixed;
+   position: fixed;
+    top: 0;
 }
     .headerBar-logo{
         width: 80%;
@@ -27,6 +28,8 @@
     position: absolute;
     top: 0;
     transition: transform 300ms linear;
+    position: fixed;
+
 }
     .navBar{
         background-color: rgba(0, 35, 80, 0);
