@@ -7,9 +7,6 @@
     width: 100%;
     box-shadow: 1px 1px 20px 5px black;
     display: flex;
-    position: absolute;
-    top: 0px;
-    
 
 }
     .headerBar-logo{
