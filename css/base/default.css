@@ -25,5 +25,11 @@ footer p{
     footer p{
         padding: 1.5% 0;
     }
+}
 
+/*Ajuste de TELA MIN 1600px  */
+@media screen and (min-width: 80em){
+    footer p{
+        padding: .7% 0;
+    }
 }

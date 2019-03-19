@@ -1,0 +1,4 @@
+.title-article:hover{
+    color: red;
+    transition: color 400ms linear;
+}

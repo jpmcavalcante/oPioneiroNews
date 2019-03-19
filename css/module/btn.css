@@ -29,6 +29,7 @@
     padding: 2% 3%;
     box-shadow: 1px 1px 1px 1px #aaabad;
     margin: 0 2%;
+    border-radius: 10%;
 }
 
 /* Ajuste de TELA MIN 768px   */
@@ -55,9 +56,39 @@
         margin: 0 2% 10% 0;
         font-size: 2em;
     }
+}
 
+/* Ajuste de TELA MIN WIDTH 1024px  */
+@media screen and (min-width: 64em){
+    /* Botão Abrir do menu */
+    .btnMenu{
+        width: 3%;
+        height: 100%;
+        padding: 0 1%;
+    }
+    /* Botão Fechar do menu */
+    .btnMenu-close{
+        width: 14%;
+        padding: 0 5%;
+    }
+    /* Movimento Contrário do menu  */
+    .menuClose{
+        transform: translateX(500px);
+    }
 
+      /* Botão Link de páginas  */ 
+      .linkPage{
+        margin: 0 2% 10% 0;
+        font-size: 1.5em;
+        padding: 1%;
+        border-radius: 10%;
+    }
+}
 
+/* Ajuste de TELA MIN WIDTH 1900px  */
+@media screen and (min-width: 120em){}
+.linkPage{
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.555);
 }
 
 

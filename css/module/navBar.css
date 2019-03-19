@@ -7,7 +7,7 @@
     width: 100%;
     box-shadow: 1px 1px 20px 5px black;
     display: flex;
-   position: fixed;
+    position: fixed;
     top: 0;
 }
     .headerBar-logo{
@@ -29,7 +29,6 @@
     top: 0;
     transition: transform 300ms linear;
     position: fixed;
-
 }
     .navBar{
         background-color: rgba(0, 35, 80, 0);
@@ -97,7 +96,7 @@
     }
 
 
-/*  Ajustes de TELA MIN WIDTH 760   */
+/*  Ajustes de TELA MIN WIDTH 760px   */
 @media screen and (min-width: 47.5em){
     .menu_item{
         font-size: 2.5em;
@@ -105,6 +104,53 @@
     .nav_RedesSociais p{
         font-size: 1.8em;
     }
+}
+
+
+/* Ajuste de TELA MIN WIDTH 1024px  */
+@media screen and (min-width: 64em){
+
+    /*  Ajuste de CABECALHO  */
+    .headerBar, .navBar{
+        height: 4.5em;
+    }
+    .headerBar-logo{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }
+    .navBar-logo{
+        width:85%;
+        height: 100%;
+    }
+   .navBar-logo img{
+    display: none;
+    }
+
+    /* Barra Menu  */
+    .wrap-menu{
+        width: 20%;
+        top: 0;
+        right: 0;
+    }
+    .menu_item{
+        width: 90%;
+        padding: 5% 2%;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    /* Ajustes Icones Redes Sociais  */
+    .nav_RedesSociais a{
+        text-decoration: none;
+        font-size: 2em;
+        padding: 2%;
+    }
+    .nav_RedesSociais p{
+        font-size: 1.2em;
+        margin: 14% 0 0 0;
+    }
+
 }
 
 
