@@ -5,12 +5,25 @@ footer{
     display: flex;
     text-align: center;
     justify-content: center;
-    
 }
 
 footer p{
     color: white;
     font-family: 'Lato', sans-serif;
     padding: 3% 0;
+}
+
+/*Ajuste de TELA MIN 760px  */
+@media screen and (min-width: 47.5em){
     
+    /* Ajuste do RODAPÉ  */
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+    
+    footer p{
+        padding: 1.5% 0;
+    }
+
 }

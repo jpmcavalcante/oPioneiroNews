@@ -9,7 +9,6 @@
 .btnMenu-close{
     width: 10%;
     height: 100%;
-    
     background: rgb(0, 35, 80);
     display: block;
     margin: auto;
@@ -18,7 +17,6 @@
         transform: translateX(-500px);
     }
 
-
 /* Botão de Paginas  */
 .btn-page{
     display: flex;
@@ -26,12 +24,42 @@
     margin-bottom: 4%;
 }
 
-.linkPage, .linkPage1{
+.linkPage{
     text-decoration: none;
     padding: 2% 3%;
     box-shadow: 1px 1px 1px 1px #aaabad;
     margin: 0 2%;
 }
+
+/* Ajuste de TELA MIN 768px   */
+@media screen and (min-width: 47.5em){
+    
+    /* Efeitos dos Botões do Menu */
+    .btnMenu{
+        width: 5%;
+        padding: 0;
+        margin: 0 0 0 12%;
+    }
+    .btnMenu-close{
+        width: 5%;
+        margin: 0 0 0 12%;
+    }
+
+    /*  Deslocamento do Menu  */ 
+    .menuClose{
+        transform: translateX(-1200px);
+    }
+
+    /* Botão Link de páginas  */ 
+    .linkPage{
+        margin: 0 2% 10% 0;
+        font-size: 2em;
+    }
+
+
+
+}
+
 
 
 

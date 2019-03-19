@@ -97,4 +97,15 @@
     }
 
 
+/*  Ajustes de TELA MIN WIDTH 760   */
+@media screen and (min-width: 47.5em){
+    .menu_item{
+        font-size: 2.5em;
+    }
+    .nav_RedesSociais p{
+        font-size: 1.8em;
+    }
+}
+
+
 
